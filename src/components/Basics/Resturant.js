@@ -5,6 +5,7 @@ impo
 const Resturant = () => {
   return (
     <>
+    {/* This is the card html layout */}
       <div className="card-container">
         <div className="card">
           <div className="label">1</div>
