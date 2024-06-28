@@ -4,6 +4,7 @@ import Menu from "./menuApi";
 import MenuCard from "./MenuCard";
 import Navbar from "./Navbar";
 
+//Creating the unique list of the categories to automate the rendering of categories
 const uniqueList = [...new Set(
   Menu.map((currElem) => {
     return currElem.category;
@@ -21,6 +22,7 @@ const Resturant = () => {
         return;
     }
 
+    //Update the menu as per the current navbar button clicked
     const updatedList = Menu.filter((currElem)=>{
         return currElem.category == category;
     });
