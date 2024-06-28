@@ -1,5 +1,3 @@
-//Menu Api with the feed details custom made
-
 const Menu = [
   {
     id: 1,
