@@ -10,13 +10,26 @@ body{
     background-color: rgb(240, 183, 187);
 }
 
+.main-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 500px));
+    grid-gap: 25px;
+    justify-content: space-around;
+}
+
+@media (max-width: 998px) {
+    .main-card-container{
+      display: grid;
+      grid-template-columns: repeat(1, minmax(200px, 500px));
+      grid-gap: 50px;
+      justify-content: space-around;
+    }
+}
+
 /*food card styling*/
 .card-container{
     background-color: rgb(255, 255, 255);
-
-    width: 300px;
     padding: 20px;
-
     margin: 20px;
 }
 
