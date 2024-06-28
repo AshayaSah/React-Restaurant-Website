@@ -1,5 +1,6 @@
 import React from "react";
 
+//function to return the actual navbar
 const Navbar = ({ navbarList, filteredItem }) => {
   return (
     <>

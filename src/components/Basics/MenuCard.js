@@ -1,5 +1,6 @@
 import React from "react";
 
+//function to return the cards , code of just one card is written and others are created with a loop as per out api
 const MenuCard = ({ menuData }) => {
   return (
     <>

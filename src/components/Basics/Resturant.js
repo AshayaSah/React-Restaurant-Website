@@ -26,7 +26,6 @@ const Resturant = () => {
     const updatedList = Menu.filter((currElem)=>{
         return currElem.category == category;
     });
-    console.log(updatedList);
     setMenuData(updatedList);
   };
 
