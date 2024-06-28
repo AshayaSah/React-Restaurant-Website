@@ -7,9 +7,10 @@
 }
 
 body{
-    background-color: rgb(240, 183, 187);
+    background-color: rgb(240, 214, 216);
 }
 
+/*food card styling*/
 .main-card-container{
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 500px));
@@ -26,7 +27,6 @@ body{
     }
 }
 
-/*food card styling*/
 .card-container{
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -70,7 +70,6 @@ body{
 
     overflow: hidden;
     background-repeat: no-repeat;
-
 }
 
 img {
@@ -83,8 +82,79 @@ img {
     padding: 10px;
     text-align: center;
 
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 10px;
-    box-shadow: inset 1px 1px 5px black;
-
+    box-shadow: inset 1px 1px 5px rgb(203, 198, 198);
 }
+
+/* Navbar Styling*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+}
+
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+      }
+    
+      .btn-group {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .btn-group button {
+        flex: 1 1 auto; /* Make buttons take full width on smaller screens */
+      }
+}
+
+/* Basic button styles */
+button {
+    /* width: 120px; */
+    text-align: center;
+
+    border: 2px solid black;
+    background-color: transparent; /* No background color */
+    color: #000; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative; /* Position relative for the underline */
+  }
+  
+  /* Create an underline on hover */
+  button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000; /* Color of the underline */
+    transition: width 0.3s; /* Smooth transition for the underline */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  /* Hover state */
+  button:hover::after {
+    width: 100%; /* Full width underline on hover */
+  }
+  
+  /* Active state */
+  button:active::after {
+    width: 100%; /* Full width underline on active */
+  }
