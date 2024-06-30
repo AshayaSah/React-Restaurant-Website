@@ -7,7 +7,6 @@ const MenuCard = ({ menuData }) => {
       <section className="main-card-container">
         {menuData.map((currElem) => {
           return (
-            <>
               <div className="card-container" key={currElem.id}>
                 <div className="card">
                   <div className="label">{currElem.id}</div>
@@ -22,7 +21,6 @@ const MenuCard = ({ menuData }) => {
                   <div className="order-button">Oder Now</div>
                 </div>
               </div>
-            </>
           );
         })}
       </section>

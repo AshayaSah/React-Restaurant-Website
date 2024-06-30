@@ -1,6 +1,6 @@
 import React from "react";
 
-//function to return the actual navbar
+// function to return the actual navbar
 const Navbar = ({ navbarList, filteredItem }) => {
   return (
     <>
@@ -8,16 +8,15 @@ const Navbar = ({ navbarList, filteredItem }) => {
         <div className="btn-group">
           {navbarList.map((currElem) => {
             return (
-              <>
-                <button
-                  className="btn"
-                  onClick={() => {
-                    filteredItem(currElem);
-                  }}
-                >
-                  {currElem}
-                </button>
-              </>
+              <button
+                className="btn"
+                onClick={() => {
+                  filteredItem(currElem);
+                }}
+                key={currElem}
+              >
+                {currElem}
+              </button>
             );
           })}
         </div>
