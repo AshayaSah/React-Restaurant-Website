@@ -158,3 +158,20 @@ button {
   button:active::after {
     width: 100%; /* Full width underline on active */
   }
+
+  /* Animations */
+  .autoShow {
+    animation: autoShowAnimation linear both;
+    animation-timeline: view(70%, 5%);
+  }
+
+  @keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    TO{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+  }
